@@ -1,0 +1,4 @@
+# MongoDB Case-Insensitive Search with Robust Error Handling
+This repository demonstrates a common error in MongoDB queries involving case-insensitive searches and provides a robust solution. The issue arises when searching for a field that may not exist in all documents.  The original code uses a regular expression for case-insensitive matching, but it lacks proper error handling and fails to distinguish between no matching documents and the absence of the field.
+
+The improved solution addresses this by explicitly checking for the field's existence before performing the query. This ensures accurate results and avoids unexpected behavior.
